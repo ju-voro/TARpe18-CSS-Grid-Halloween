@@ -8,6 +8,7 @@ html {
     box-sizing: border-box;
     font-weight: 700;
     color: var(--black);
+    font-family: sans-serif;
 }
 
 body {
@@ -101,4 +102,26 @@ button {
 /*hide menu button*/
 [aria-controls="menu-list"] {
     display: none;
+}
+
+/*Feature Section*/
+.features {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.feature {
+    background: #fff;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature .icon {
+    font-size: 3rem;
+}
+
+.feature p {
+    color: rgba(0, 0, 0, 0.5);
 }
