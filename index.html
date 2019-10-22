@@ -69,15 +69,43 @@
         </div>
 
         <div class="about">
-            
+            <img src="img/pumpkinpie.PNG" alt="pumpkin pie">
+            <div class="about__details">
+                <h2>Featured Pumpkin Pie</h2>
+                <p>Tastes Terribly good!</p>
+                <p>This is the pie you've been looking for...</p>
+                <button>Learn more</button>
+            </div>
         </div>
 
+        <div class="gallery">
+            <h2>Instant Grams</h2>
+            <img src="https://source.unsplash.com/random/201x201" alt="">
+            <img src="https://source.unsplash.com/random/202x202" alt="">
+            <img src="https://source.unsplash.com/random/203x203" alt="">
+            <img src="https://source.unsplash.com/random/204x204" alt="">
+            <img src="https://source.unsplash.com/random/205x205" alt="">
+            <img src="https://source.unsplash.com/random/206x206" alt="">
+            <img src="https://source.unsplash.com/random/207x207" alt="">
+            <img src="https://source.unsplash.com/random/208x208" alt="">
+            <img src="https://source.unsplash.com/random/207x202" alt="">
+            <img src="https://source.unsplash.com/random/202x208" alt="">
 
-
-
-
-
+        </div>
     </div>
+
+    <script>
+        const menuButton = document.querySelector('button[aria-expanded]');
+        
+        function toggleMenu({target}){
+            const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+            menuButton.setAttribute('aria-expanded', !expanded);
+            console.log("Toggled!");
+        }
+
+        menuButton.addEventListener('click', toggleMenu);
+
+    </script>
 
 </body>
 
